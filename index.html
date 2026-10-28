@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10191d" />
+    <meta name="description" content="Antti Lab is a personal studio for thoughtful experiments in AI, research and learning." />
+    <title>Antti Lab — Interactive Research Studio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Antti Lab home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-copy"><strong>ANTTI LAB</strong><small>INTERACTIVE RESEARCH STUDIO</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-toggle-label">Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#ai-lab">AI lab</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#projects">Projects</a>
+      </nav>
+
+      <a class="header-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> A personal studio for curious minds</p>
+          <h1 id="hero-title">Curiosity,<br />made <em>visible.</em></h1>
+          <p class="hero-intro">A space for exploring how AI, research and learning can open up new ways to see the world.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore the studio <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnote"><span>01 / 05</span><span class="footnote-rule"></span><span>Ideas in progress</span></div>
+        </div>
+
+        <div class="hero-art" aria-label="An atmospheric rainy night view through a studio window, drawn with a lightweight animated canvas" role="img">
+          <canvas id="rain-window" aria-hidden="true"></canvas>
+          <div class="art-grain" aria-hidden="true"></div>
+          <div class="art-topline"><span>THE STUDIO, AFTER HOURS</span><span>RAIN · LIGHT · IDEAS</span></div>
+          <div class="art-note"><span class="note-icon" aria-hidden="true">✳</span><span><strong>Room for wonder.</strong><small>Field notes from a curious life</small></span></div>
+          <span class="art-caption">A window into what might be.</span>
+        </div>
+        <div class="hero-bottomline"><span>INDEPENDENT IDEAS, OPENLY SHARED</span><span>SCROLL TO EXPLORE <b aria-hidden="true">↓</b></span></div>
+      </section>
+
+      <section class="intro-section section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-kicker"><span>01</span><span>ABOUT THE STUDIO</span></div>
+        <div class="intro-grid">
+          <h2 id="about-title">A good question<br />can take you <em>anywhere.</em></h2>
+          <div class="intro-body">
+            <p class="lead">Antti Lab brings together questions, ideas and small experiments at the edges of technology and human learning.</p>
+            <p>This is a living portfolio: a place to make work visible, share what I’m learning, and connect the dots between research, teaching and practice.</p>
+            <a class="arrow-link" href="#research">Meet the ideas <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="principles" aria-label="Studio principles">
+          <div><span class="principle-number">01</span><strong>Stay curious</strong><span>Start with better questions.</span></div>
+          <div><span class="principle-number">02</span><strong>Make it tangible</strong><span>Turn concepts into experiences.</span></div>
+          <div><span class="principle-number">03</span><strong>Share the process</strong><span>Learning grows in the open.</span></div>
+        </div>
+      </section>
+
+      <section class="lab-section section-pad" id="ai-lab" aria-labelledby="lab-title">
+        <div class="section-kicker light"><span>02</span><span>THE AI LAB</span><span class="kicker-tail">A PLAYGROUND FOR PRACTICAL FUTURES</span></div>
+        <div class="lab-heading-row">
+          <div><p class="overline">EXPERIMENTS WITH INTENTION</p><h2 id="lab-title">Not just what AI can do.<br /><em>What it could mean.</em></h2></div>
+          <p class="lab-description">A growing collection of hands-on explorations into how emerging tools can support creativity, understanding and everyday work.</p>
+        </div>
+        <div class="lab-cards">
+          <article class="lab-card">
+            <div class="lab-card-top"><span>01 / INTERFACES</span><span class="mini-orbit" aria-hidden="true">✳</span></div>
+            <h3>Tools for thought</h3>
+            <p>Small, human-centred ways to make complex ideas easier to explore.</p>
+            <span class="card-foot">PROMPTS · PROTOTYPES · PLAY</span>
+          </article>
+          <article class="lab-card lab-card-featured">
+            <div class="lab-card-top"><span>02 / LEARNING</span><span class="mini-spark" aria-hidden="true">✳</span></div>
+            <h3>Learning, reimagined</h3>
+            <p>Experiments that make room for agency, feedback and different ways of knowing.</p>
+            <span class="card-foot">PEOPLE · PRACTICE · POSSIBILITY</span>
+          </article>
+          <article class="lab-card">
+            <div class="lab-card-top"><span>03 / EVERYDAY AI</span><span class="mini-cross" aria-hidden="true">＋</span></div>
+            <h3>Useful by design</h3>
+            <p>Thoughtful applications that earn their place in real-world workflows.</p>
+            <span class="card-foot">CONTEXT · CARE · CRAFT</span>
+          </article>
+        </div>
+        <div class="lab-bottom"><span>THE BEST WAY TO UNDERSTAND A NEW TOOL IS TO MAKE SOMETHING WITH IT.</span><span class="lab-asterisk" aria-hidden="true">✳</span></div>
+      </section>
+
+      <section class="research-section section-pad" id="research" aria-labelledby="research-title">
+        <div class="section-kicker"><span>03</span><span>RESEARCH NOTES</span><span class="kicker-tail">QUESTIONS WORTH FOLLOWING</span></div>
+        <div class="research-heading"><h2 id="research-title">Following the<br /><em>interesting threads.</em></h2><p>Some questions take longer than a project. These are a few of the themes that keep unfolding.</p></div>
+        <div class="research-list">
+          <article class="research-row"><span class="row-index">R—01</span><div><h3>Learning with emerging technology</h3><p>What changes when the tools around us can adapt, respond and create?</p></div><span class="row-tag">LEARNING FUTURES</span><span class="row-arrow" aria-hidden="true">↗</span></article>
+          <article class="research-row"><span class="row-index">R—02</span><div><h3>AI in everyday practice</h3><p>How do people build trust, skill and good judgment alongside AI?</p></div><span class="row-tag">HUMAN–AI</span><span class="row-arrow" aria-hidden="true">↗</span></article>
+          <article class="research-row"><span class="row-index">R—03</span><div><h3>Making knowledge visible</h3><p>How can visual and interactive experiences help ideas travel?</p></div><span class="row-tag">EXPLAINING IDEAS</span><span class="row-arrow" aria-hidden="true">↗</span></article>
+        </div>
+        <p class="small-note">These themes are starting points, not a list of publications. Add links to your papers, talks or notes when you’re ready.</p>
+      </section>
+
+      <section class="teaching-section section-pad" id="teaching" aria-labelledby="teaching-title">
+        <div class="teaching-visual" aria-hidden="true">
+          <div class="chalk-board"><span class="chalk-label">A CLASSROOM IS A<br />PLACE TO TRY AN IDEA.</span><span class="chalk-doodle doodle-one">?</span><span class="chalk-doodle doodle-two">✳</span><span class="chalk-line line-one"></span><span class="chalk-line line-two"></span><span class="chalk-line line-three"></span><span class="chalk-line line-four"></span><span class="board-pin"></span></div>
+          <div class="visual-caption"><span>LEARNING IN THE MAKING</span><span>FIG. 01</span></div>
+        </div>
+        <div class="teaching-copy">
+          <div class="section-kicker"><span>04</span><span>TEACHING & LEARNING</span></div>
+          <p class="overline">MAKE SPACE FOR THE “AHA”</p>
+          <h2 id="teaching-title">Make complex<br />ideas feel <em>within reach.</em></h2>
+          <p class="teaching-lead">Good learning is more than delivering information. It’s creating the conditions for people to connect ideas, test their thinking and find their own way in.</p>
+          <div class="teaching-values"><div><span>↗</span><strong>Hands-on</strong><small>Learn by making and doing.</small></div><div><span>↗</span><strong>Open-ended</strong><small>Make room for more than one path.</small></div><div><span>↗</span><strong>Reflective</strong><small>Notice what changed along the way.</small></div></div>
+          <a class="arrow-link" href="#contact">Bring a question to the table <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="projects-section section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-kicker light"><span>05</span><span>SELECTED PROJECTS</span><span class="kicker-tail">A FEW THINGS TAKING SHAPE</span></div>
+        <div class="projects-heading"><h2 id="projects-title">Ideas, made <em>real.</em></h2><a class="text-link light-link" href="#contact">Have a project in mind? <span aria-hidden="true">↗</span></a></div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-art art-map" aria-hidden="true"><span class="map-word word-a">notice</span><span class="map-word word-b">wonder</span><span class="map-word word-c">connect</span><i class="map-node node-a"></i><i class="map-node node-b"></i><i class="map-node node-c"></i><i class="map-node node-d"></i><i class="map-path path-a"></i><i class="map-path path-b"></i><i class="map-path path-c"></i><span class="art-index">A—01</span></div>
+            <div class="project-meta"><div><span class="project-type">INTERACTIVE NOTEBOOK</span><h3>Field Notes for the Future</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p>A small space for collecting questions, patterns and ideas as they emerge.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-signal" aria-hidden="true"><span class="signal-sun"></span><span class="signal-ring ring-a"></span><span class="signal-ring ring-b"></span><span class="signal-ring ring-c"></span><span class="signal-label">SIGNAL / 02</span></div>
+            <div class="project-meta"><div><span class="project-type">AI EXPERIMENT</span><h3>Signal Garden</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p>Exploring how a conversational interface can help an idea grow clearer.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-atlas" aria-hidden="true"><span class="atlas-card atlas-card-one">ASK<br />BETTER<br /><em>QUESTIONS</em></span><span class="atlas-card atlas-card-two">MAKE<br />A SMALL<br /><em>THING</em></span><span class="atlas-card atlas-card-three">LEARN<br />IN THE<br /><em>OPEN</em></span><span class="art-index">ATLAS / 03</span></div>
+            <div class="project-meta"><div><span class="project-type">LEARNING TOOLKIT</span><h3>The Learning Atlas</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p>Prompts and practices for finding your bearings in unfamiliar territory.</p>
+          </article>
+        </div>
+        <p class="projects-disclaimer">Project cards are starter concepts. Replace them with real work, images and links before publishing.</p>
+      </section>
+
+      <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="contact-orbit" aria-hidden="true"><span>✳</span><i></i></div>
+        <div class="section-kicker"><span>06</span><span>OPEN STUDIO</span></div>
+        <div class="contact-content"><p class="overline">GOOD THINGS START WITH A QUESTION</p><h2 id="contact-title">What are you<br /><em>curious about?</em></h2><p>Have a question, a collaboration in mind, or a classroom challenge? I’d love to hear what you’re exploring.</p><a class="button button-primary" href="mailto:hello@example.com">Start a conversation <span aria-hidden="true">↗</span></a><small>Before publishing: replace hello@example.com with your email address.</small></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-copy"><strong>ANTTI LAB</strong><small>INTERACTIVE RESEARCH STUDIO</small></span></a><span class="footer-note">MADE WITH CURIOSITY, KEPT INDEPENDENT.</span><a class="back-top" href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a><span class="copyright">© <span id="year">2026</span> ANTTI LAB</span></footer>
+  </body>
+</html>
